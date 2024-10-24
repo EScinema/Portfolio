@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="default.css">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<Body>
+    <h1 class="header">Easton Swenson</h1>
+    <div class="spread">
+        <a href="cinematographer.html">
+            <h3 class="link">Cinematographer</h3>
+        </a>
+
+        <h3 class="divider">|</h3>
+
+        <a href="gaffer.html">
+        <h3 class="link">Gaffer</h3>
+        </a>
+
+        <h3 class="divider">|</h3>
+
+        <a href="3d_artist.html">
+        <h3 class="link">3D Artist</h3>
+        </a>
+
+        <h3 class="divider">|</h3>
+        
+        <a href="contact_me.html">
+        <h3 class="link">Contact Me</h3>
+        </a>
+    </div>
+    <div class="projects">
+        <a href="gaffer.html">
+            <div class="shortfilms">
+                <img src="images/Gothel.png" alt="">
+                <h2>Gothel shortfilm</h2>
+                <video loop muted class="video" src="videos/gothel.MP4" type="video/mp4"></video>
+            </div>
+        </a>
+    </div>
+</Body>
+<script>
+    const videos = document.querySelectorAll('.video');
+
+    videos.forEach(video => {
+    video.addEventListener('mouseenter', () => {
+    video.play();
+    });
+
+    video.addEventListener('mouseleave', () => {
+    video.pause();
+    video.currentTime = 0;
+    });
+    });
+</script>
