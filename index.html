@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+
 <head>
     <script src="https://kit.fontawesome.com/5e4114226f.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="index.css">
-<link rel="stylesheet" href="default.css">
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="default.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
+
 <Body>
     <h1 class="header">Easton Swenson</h1>
     <div class="spread">
@@ -15,42 +17,79 @@
         <h3 class="divider">|</h3>
 
         <a href="gaffer.html">
-        <h3 class="link">Gaffer</h3>
+            <h3 class="link">Gaffer</h3>
         </a>
 
         <h3 class="divider">|</h3>
 
         <a href="3d_artist.html">
-        <h3 class="link">3D Artist</h3>
+            <h3 class="link">3D Artist</h3>
         </a>
 
         <h3 class="divider">|</h3>
 
         <a href="contact_me.html">
-        <h3 class="link">Contact Me</h3>
+            <h3 class="link">Contact Me</h3>
         </a>
     </div>
     <div class="projects">
         <h3 class="sort">Sorted by most recent <i class="fa-solid fa-angle-down"></i></h3>
         <a href="gaffer.html#session">
-            <div class="shortfilms">
+            <div class="container">
                 <img src="images/session.jpg" alt="">
                 <h2>Session shortfilm</h2>
                 <video style="display: none;" muted class="video" src="videos/gothel.MP4" type="video/mp4"></video>
             </div>
         </a>
         <a href="gaffer.html#gothel">
-            <div class="shortfilms">
+            <div class="container">
                 <img src="images/Gothel.png" alt="">
                 <h2>Gothel shortfilm</h2>
                 <video loop muted class="video" src="videos/gothel.MP4" type="video/mp4"></video>
             </div>
         </a>
         <a href="gaffer.html#blossom">
-            <div class="shortfilms">
+            <div class="container">
                 <img src="images/Blossom.jpg" alt="">
                 <h2>Blossom shortfilm</h2>
                 <video loop muted class="video" src="videos/Blossom.mp4" type="video/mp4"></video>
+            </div>
+        </a>
+        <a href="3d_artist.html#flood">
+            <div class="container">
+                <img src="images/flood.jpg" alt="">
+                <h2>Flood Social Media</h2>
+                <video loop muted class="video" src=""></video>
+            </div>
+        </a>
+        <a href="gaffer.html#comehere">
+            <div class="container">
+                <img src="images/comehere.jpg" alt="">
+                <h2>Come Here Social Media</h2>
+                <video loop muted class="video"
+                    src="https://scontent.cdninstagram.com/o1/v/t16/f1/m86/BA4158EB58843DD7C6DDDE7CC5129190_video_dashinit.mp4?stp=dst-mp4&efg=eyJxZV9ncm91cHMiOiJbXCJpZ193ZWJfZGVsaXZlcnlfdnRzX290ZlwiXSIsInZlbmNvZGVfdGFnIjoidnRzX3ZvZF91cmxnZW4uY2xpcHMuYzIuMTI3Ni5iYXNlbGluZSJ9&_nc_cat=106&vs=2781552695332495_964701988&_nc_vs=HBksFQIYUmlnX3hwdl9yZWVsc19wZXJtYW5lbnRfc3JfcHJvZC9CQTQxNThFQjU4ODQzREQ3QzZERERFN0NDNTEyOTE5MF92aWRlb19kYXNoaW5pdC5tcDQVAALIAQAVAhg6cGFzc3Rocm91Z2hfZXZlcnN0b3JlL0dHLWI3QnBVSmpoTWs5Z0JBQ0JXX2ZTUEhoY3picV9FQUFBRhUCAsgBACgAGAAbABUAACaqoZ750rm%2BPxUCKAJDMywXQEC7peNT988YEmRhc2hfYmFzZWxpbmVfMV92MREAdf4HAA%3D%3D&ccb=9-4&oh=00_AYAVh1Gb2Xs7Z1J0tr61v4GakRBPgcoiSGvHbkxwE1tdJA&oe=671D00FC&_nc_sid=10d13b"></video>
+            </div>
+        </a>
+        <a href="3d_artist.html#outerwilds">
+            <div class="container">
+                <img src="images/outerwilds.jpg" alt="">
+                <h2>Outer Wilds Wallpaper</h2>
+                <video loop muted class="video"
+                    src="videos/outerwilds.mp4"></video>
+            </div>
+        </a>
+        <a href="gaffer.html#noontonoon">
+            <div class="container">
+                <img src="images/noontonoon.jpg" alt="">
+                <h2>Noon To Noon shortfilm</h2>
+                <video loop muted class="video" src="videos/noontonoon.mp4" type="video/mp4"></video>
+            </div>
+        </a>
+        <a href="cinematographer.html#theville">
+            <div class="container">
+                <img src="images/theville.jpg" alt="">
+                <h2>The Ville Web Series</h2>
+                <video loop muted class="video" src="videos/theville.mp4" type="video/mp4"></video>
             </div>
         </a>
     </div>
@@ -70,13 +109,13 @@
     const videos = document.querySelectorAll('.video');
 
     videos.forEach(video => {
-    video.addEventListener('mouseenter', () => {
-    video.play();
-    });
+        video.addEventListener('mouseenter', () => {
+            video.play();
+        });
 
-    video.addEventListener('mouseleave', () => {
-    video.pause();
-    video.currentTime = 0;
-    });
+        video.addEventListener('mouseleave', () => {
+            video.pause();
+            video.currentTime = 0;
+        });
     });
 </script>

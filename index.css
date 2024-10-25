@@ -12,7 +12,7 @@
     display: block;
 }
 
-.shortfilms{
+.container{
     height: auto;
     margin: auto;
     display: block;
@@ -20,7 +20,7 @@
     margin-bottom: 100px;
 }
 
-.shortfilms > h2 {
+.container > h2 {
     width: 100%;
     position: absolute;
     top:-20px;
@@ -49,23 +49,19 @@
     position: absolute;
     top: 0px;
     left: 50%;
-    -webkit-transform: translate(-50%);
-    -moz-transform: translate(-50%);
-    -ms-transform: translate(-50%);
-    -o-transform: translate(-50%);
     transform: translate(-50%);
     transition: opacity 1.5s;
 }
 
-.shortfilms:hover > img {
+.container:hover > img {
     opacity: 50%;
 }
 
-.shortfilms:hover > h2 {
+.container:hover > h2 {
     letter-spacing: 4px;
     opacity: 0%;
 }
 
-.shortfilms:hover > video {
+.container:hover > video {
     opacity: 100%;
 }
