@@ -144,7 +144,7 @@ a:hover>h3 {
 .work {
     display: flex;
     margin: auto;
-    width: 75%;
+    width: 100%;
     flex-direction: column;
 }
 
@@ -154,7 +154,7 @@ a:hover>h3 {
     background-color: #090a0e;
     border-radius: 10px;
     padding-bottom: 10vw;
-    width: 75%;
+    width: 80%;
 }
 
 .subwork>h3 {
