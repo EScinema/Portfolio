@@ -9,7 +9,7 @@
 }
 
 .whoamiwrapper p {
-    font-size: x-large;
+    font-size: 5vw;
     width: 80%;
     margin: auto;
 }
@@ -34,11 +34,12 @@
 }
 
 .myworkwrapper p {
-    font-size: x-large;
+    font-size: 5vw;
     width: 90%;
     margin: auto;
     padding-bottom: 40px;
     line-height: 35px;
+    word-spacing: -1vw;
 }
 
 .contactwrapper {

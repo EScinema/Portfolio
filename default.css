@@ -87,12 +87,13 @@ a:hover>h3 {
     margin: auto;
     margin-top: 10vh;
     padding-top: 5vh;
-    padding-bottom: 30vh;
-    font-size: 80px;
+    padding-bottom: 15vh;
+    font-size: 10vw;
     justify-content: center;
     display: flex;
     background-color: #151515;
     z-index: -1;
+    overflow: hidden;
 }
 
 .footer>a {
@@ -106,7 +107,7 @@ a:hover>h3 {
 }
 
 .footer>a>p {
-    font-size: 30px;
+    font-size: 5vw;
     margin-top: 0px;
     display: none;
     text-transform: capitalize;
