@@ -23,11 +23,10 @@
 .container>h2 {
     width: 100%;
     position: absolute;
-    top: -20px;
+    top: 40%;
     left: 50%;
     transform: translate(-50%);
     z-index: -1;
-    padding-top: 25%;
     letter-spacing: inherit;
     opacity: 100%;
     transition: letter-spacing 1s, opacity .5s;
@@ -63,9 +62,14 @@
 }
 
 .container>.more {
+    top: 39%;
     letter-spacing: 4px;
     opacity: 0%;
     transition: none !important;
+    width: fit-content;
+    padding: 10px;
+    background-color: rgb(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .container:hover>.more {
