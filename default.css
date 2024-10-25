@@ -154,6 +154,7 @@ a:hover>h3 {
     background-color: #090a0e;
     border-radius: 10px;
     padding-bottom: 10vw;
+    width: 75%;
 }
 
 .subwork>h3 {
