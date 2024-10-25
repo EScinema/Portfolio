@@ -33,14 +33,71 @@
         </a>
     </div>
 
+    <div class="whoamiwrapper">
+        <h1>Who Am I</h1>
+        <img src="images/Easton.jpg" alt="">
+        <p>My name is Easton Swenson.</p>
+        <p> I am a freelance videographer dedicated to making stunning content in every medium. Some of my favorite
+            hobbies are: Playing video games, Watching Movies and TV, and creating art.</p>
+    </div>
+
+    <div class="myworkwrapper">
+        <h1>My Work</h1>
+        <p>From the very first inkling of an idea to the final cut that leaves audiences breathless, I have forged
+            high-quality content for an array of remarkable clients.
+
+            As a freelancer, I have honed my craft in visual
+            storytelling, seamlessly intertwining creativity with the intricate logistics that drive every production.
+            Whether working independently or orchestrating a talented crew of a dozen or more, I have penned evocative
+            scripts, directed exceptional talent, and composed striking imagery that resonates deeply.
+
+            In the post-production realm, I meticulously sculpt each frame, crafting thoughtful edits that elevate the
+            narrative and captivate the viewer. Together, let’s transform your vision into a stunning cinematic
+            experience that lingers long after the credits roll.</p>
+    </div>
+
+    <div class="contactwrapper">
+        <button onclick="copyinfo('phone')"><a><i class="fa-solid fa-phone"></i></button></a>
+        <button onclick="copyinfo('email')"><a><i class="fa-solid fa-envelope"></i></button></a>
+        <button><a href="https://www.instagram.com/escinema_/profilecard/?igsh=MW51Ynh5NG15eHlycg==" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></button></a>
+        <button><a href="https://www.facebook.com/share/sgW3mSdyR4uweEpi/?mibextid=kFxxJD" target="_blank"><i
+                    class="fa-brands fa-facebook"></i></button></a>
+    </div>
+
+    <div class="copyconfirm" id="copyconfirm">
+        <h1 id="phone">Phone number has been copied.</h1>
+        <h1 id="email">Email has been copied.</h1>
+    </div>
+
     <div class="footer">
-        <a href="https://www.instagram.com/escinema_/profilecard/?igsh=MW51Ynh5NG15eHlycg==">
+        <a href="https://www.instagram.com/escinema_/profilecard/?igsh=MW51Ynh5NG15eHlycg==" target="_blank">
             <i class="fa-brands fa-instagram"></i>
             <p>instagram</p>
         </a>
-        <a href="https://www.facebook.com/share/sgW3mSdyR4uweEpi/?mibextid=kFxxJD">
+        <a href="https://www.facebook.com/share/sgW3mSdyR4uweEpi/?mibextid=kFxxJD" target="_blank">
             <i class="fa-brands fa-facebook"></i>
             <p>facebook</p>
         </a>
     </div>
 </Body>
+<script>
+    function copyinfo(which) {
+        var x = document.getElementById('copyconfirm');
+        var copyText = which;
+
+        // Copy the text inside the text field
+        navigator.clipboard.writeText(copyText);
+
+        document.getElementById("email").style.display = "block"
+        document.getElementById("phone").style.display = "block"
+        if (copyText == "phone") {
+            document.getElementById("email").style.display = "none"
+        } else {
+            document.getElementById("phone").style.display = "none"
+        }
+        // Alert the copied text
+        x.style.animation = "";
+        setTimeout(() => x.style.animation = "copy 2s");
+    }
+</script>

@@ -19,7 +19,6 @@ body {
     text-align: center;
     background-image: url(images/FilmBG.jpg);
     margin: 0px;
-    background-attachment: fixed;
     background-position: center;
     min-height: 100%;
 }
@@ -37,24 +36,37 @@ a {
     color: white;
 }
 
+button {
+    background: none !important;
+    border: none;
+    padding: 0px !important;
+    /*optional*/
+    font-family: arial,
+        sans-serif;
+    /*input has OS specific font-family*/
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
 .sort {
     text-align: left;
     width: fit-content;
     margin-left: 5vw;
 }
 
-.spread > a {
+.spread>a {
     width: 33%;
 }
 
-a > h3 {
+a>h3 {
     border-bottom: 0px solid #E9A23B;
     width: fit-content;
     margin: auto;
     transition: border-bottom .2s;
 }
 
-a:hover > h3 {
+a:hover>h3 {
     border: none;
     border-radius: 6px;
     border-bottom: 3px solid #E9A23B;
@@ -83,17 +95,17 @@ a:hover > h3 {
     z-index: -1;
 }
 
-.footer > a {
+.footer>a {
     width: 33%;
     opacity: 100%;
     transition: opacity .2s;
 }
 
-.footer > a:hover {
+.footer>a:hover {
     opacity: 25%;
 }
 
-.footer > a > p {
+.footer>a>p {
     font-size: 30px;
     margin-top: 0px;
     display: none;
@@ -105,7 +117,7 @@ a:hover > h3 {
     transition: border-bottom .2s;
 }
 
-.footer > a:hover > p{
+.footer>a:hover>p {
     border: none;
     border-radius: 6px;
     border-bottom: 3px solid white;
@@ -122,7 +134,7 @@ a:hover > h3 {
     color: #E9A23B;
 }
 
-.spread > a {
+.spread>a {
     margin: auto;
     letter-spacing: .1vw;
     color: inherit;
@@ -215,7 +227,7 @@ a:hover > h3 {
         height: 15vh;
     }
 
-    .spread > a{
+    .spread>a {
         margin: auto;
         width: fit-content;
         margin-top: 5vh;
@@ -225,7 +237,7 @@ a:hover > h3 {
         display: none;
     }
 
-    .footer > a > p {
+    .footer>a>p {
         display: block;
     }
 }
