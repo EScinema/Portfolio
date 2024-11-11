@@ -189,7 +189,7 @@ a:hover>h3 {
     display: block;
     margin: auto;
     text-align: left;
-    margin-top: 30px;
+    padding-top: 30px;
     width: 90% !important;
     animation: totop .8s 4 forwards;
     animation-delay: 1s;
@@ -197,18 +197,18 @@ a:hover>h3 {
 
 @keyframes totop {
     0% {
-        margin-top: 30px;
-        margin-bottom: 0px;
+        padding-top: 30px;
+        padding-bottom: 0px;
     }
 
     50% {
-        margin-top: 15px;
-        margin-bottom: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     100% {
-        margin-top: 30px;
-        margin-bottom: 0px;
+        padding-top: 30px;
+        padding-bottom: 0px;
     }
 }
 
