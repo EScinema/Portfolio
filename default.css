@@ -175,12 +175,14 @@ a:hover>h3 {
 .stillinpost>img {
     z-index: -1;
     opacity: 30%;
+    height: fit-content;
 }
 
 .stillinpost>h2 {
     text-transform: none;
     position: absolute;
-    top: 5%;
+    font-size: 5vw;
+    bottom: 30%;
     left: 50%;
     transform: translate(-50%);
 }
