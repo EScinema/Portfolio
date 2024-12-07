@@ -29,6 +29,7 @@ h2 {
 
 img {
     width: 90%;
+    height: auto;
 }
 
 a {
@@ -175,7 +176,6 @@ a:hover>h3 {
 .stillinpost>img {
     z-index: -1;
     opacity: 30%;
-    height: fit-content;
 }
 
 .stillinpost>h2 {
