@@ -180,7 +180,7 @@ a:hover>h3 {
 .stillinpost>h2 {
     text-transform: none;
     position: absolute;
-    top: 30px;
+    top: 5%;
     left: 50%;
     transform: translate(-50%);
 }
