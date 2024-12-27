@@ -23,6 +23,11 @@ body {
     min-height: 100%;
 }
 
+iframe {
+    width: 90%;
+    
+}
+
 h2 {
     text-transform: uppercase;
 }
