@@ -2,11 +2,13 @@
 
 <head>
     <script src="https://kit.fontawesome.com/5e4114226f.js" crossorigin="anonymous"></script>
+    <script src="cinematography.js"></script>
     <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="cinematographer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
-<Body>
+<Body onload="populategallery()">
     <h1 id="top" class="header">Cinematographer</h1>
     <div class="spread">
         <a href="index.html">
@@ -31,9 +33,19 @@
             <h3 class="link">About/Contact Me</h3>
         </a>
     </div>
+    <div class="selectedview">
+        
+        <div id="videoview" onclick="videofunc()" class="viewcontainer">
+        <h2>Videos</h2>
+        </div>
+
+        <div id="galleryview" onclick="galleryfunc()" class="viewcontainer">
+        <h2>Gallery</h2>
+        </div>
+    </div>
 
     <h3 class="sort">Sorted by most recent <i class="fa-solid fa-angle-down"></i></h3>
-    <div class="work">
+    <div id="video" class="work">
 
         <div id="theville" class="subwork">
             <h1>The Ville S5</h1>
@@ -51,6 +63,10 @@
                 <a class="totop" href="#top">Back To Top <i class="fa-solid fa-angle-up"></i></a>
             </div>
         </div>
+    </div>
+    <h3 id="explgallery">Here are some of my most recent stills I've captured.</h3>
+    <div id="gallery" class="work">
+        <div class="subwork"><img src="" alt=""></div>
     </div>
 
     <div class="footer">
