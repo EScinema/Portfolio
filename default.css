@@ -23,7 +23,7 @@ body {
     min-height: 100%;
 }
 
-iframe {
+iframe, video {
     width: 90%;
     
 }
