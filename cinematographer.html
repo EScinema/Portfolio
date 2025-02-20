@@ -1,92 +1,142 @@
 <!DOCTYPE html>
 
 <head>
-    <script src="https://kit.fontawesome.com/5e4114226f.js" crossorigin="anonymous"></script>
-    <script src="cinematography.js"></script>
-    <link rel="stylesheet" href="default.css">
-    <link rel="stylesheet" href="cinematographer.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script
+    src="https://kit.fontawesome.com/5e4114226f.js"
+    crossorigin="anonymous"></script>
+  <script src="cinematography.js"></script>
+  <link rel="stylesheet" href="default.css" />
+  <link rel="stylesheet" href="cinematographer.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
-<Body onload="populategallery()">
-    <h1 id="top" class="header">Cinematographer</h1>
-    <div class="spread">
-        <a href="index.html">
-            <h3 style="color: white;" class="link">Easton Swenson</h3>
-        </a>
+<body onload="populategallery()">
+  <h1 id="top" class="header">Cinematographer</h1>
+  <div class="spread">
+    <a href="index.html">
+      <h3 style="color: white" class="link">Easton Swenson</h3>
+    </a>
 
-        <h3 class="divider">|</h3>
+    <h3 class="divider">|</h3>
 
-        <a href="gaffer.html">
-            <h3 class="link">Gaffer</h3>
-        </a>
+    <a href="gaffer.html">
+      <h3 class="link">Gaffer</h3>
+    </a>
 
-        <h3 class="divider">|</h3>
+    <h3 class="divider">|</h3>
 
-        <a href="3d_artist.html">
-            <h3 class="link">3D Artist</h3>
-        </a>
+    <a href="3d_artist.html">
+      <h3 class="link">3D Artist</h3>
+    </a>
 
-        <h3 class="divider">|</h3>
+    <h3 class="divider">|</h3>
 
-        <a href="contact_me.html">
-            <h3 class="link">About/Contact Me</h3>
-        </a>
+    <a href="contact_me.html">
+      <h3 class="link">About/Contact Me</h3>
+    </a>
+  </div>
+  <div class="selectedview">
+    <div id="videoview" onclick="videofunc()" class="viewcontainer">
+      <h2>Videos</h2>
     </div>
-    <div class="selectedview">
-        
-        <div id="videoview" onclick="videofunc()" class="viewcontainer">
-        <h2>Videos</h2>
+
+    <div id="galleryview" onclick="galleryfunc()" class="viewcontainer">
+      <h2>Gallery</h2>
+    </div>
+  </div>
+
+  <h3 class="sort">
+    Sorted by most recent <i class="fa-solid fa-angle-down"></i>
+  </h3>
+  <div id="video" class="work">
+    <div id="chatamicooked" class="subwork">
+      <h1>Chat Am I Cooked</h1>
+      <h3>Short Film</h3>
+      <p>
+        I was the Writer, Director, and Cinematographer for this shortfilm. I
+        single handedly created the story as well as the characters. I also
+        decided where to place the camera, how to frame each shot, and how I
+        wanted every scene to be lit.
+      </p>
+      <div class="embedcontainer">
+        <div class="stillinpost">
+          <img src="images/chatamicooked.JPEG" alt="" />
+          <h2>Sorry this project is still in production.</h2>
         </div>
-
-        <div id="galleryview" onclick="galleryfunc()" class="viewcontainer">
-        <h2>Gallery</h2>
-        </div>
+      </div>
+      <a class="totop" href="#top">
+        Back To Top <i class="fa-solid fa-angle-up"></i>
+      </a>
     </div>
-
-    <h3 class="sort">Sorted by most recent <i class="fa-solid fa-angle-down"></i></h3>
-    <div id="video" class="work">
-         <div id="infinitelyannoyed" class="subwork">
-            <h1>Infinitely Annoyed</h1>
-            <h3>Short Film</h3>
-            <p>I was the Cinematographer for this shortfilm. I helped to create the annoying experience it provides.</p>
-            <div class="embedcontainer">
-                <video controls class="video" src="https://github.com/EScinema/Portfolio/raw/refs/heads/main/videos/infinitelyannoyed.mp4" type="video/mp4"></video>
-                <a class="totop" href="#top">Back To Top <i class="fa-solid fa-angle-up"></i></a>
-            </div>
-        </div>
-
-        <div id="theville" class="subwork">
-            <h1>The Ville S5</h1>
-            <h3>Web Series</h3>
-            <p>I was the Director, Producer, Cinematographer, Gaffer, and 2D Animator for this web series. I worked every
-                week as the
-                head of a team consisting of thirteen people in order to create an eight to thirty minute episode
-                every four weeks.</p>
-            <div class="embedcontainer">
-                <div style="padding:56.25% 0 0 0;position:relative;"><iframe
-                        src="https://player.vimeo.com/video/1023160253?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                        frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                        style="position:absolute;top:0;left:0;width:100%;height:100%;" title="theville"></iframe>
-                </div>
-                <a class="totop" href="#top">Back To Top <i class="fa-solid fa-angle-up"></i></a>
-            </div>
-        </div>
-    </div>
-    <h3 id="explgallery">Here are some of my most recent stills I've captured.</h3>
-    <div id="gallery" class="work">
-        <div class="subwork"><img src="" alt=""></div>
-        <div class="subwork"><img src="" alt=""></div>
-    </div>
-
-    <div class="footer">
-        <a href="https://www.instagram.com/escinema_/profilecard/?igsh=MW51Ynh5NG15eHlycg==" target="_blank">
-            <i class="fa-brands fa-instagram"></i>
-            <p>instagram</p>
+    <div id="infinitelyannoyed" class="subwork">
+      <h1>Infinitely Annoyed</h1>
+      <h3>Short Film</h3>
+      <p>
+        I was the Cinematographer for this shortfilm. I helped to create the
+        annoying experience it provides.
+      </p>
+      <div class="embedcontainer">
+        <video
+          controls
+          class="video"
+          src="https://github.com/EScinema/Portfolio/raw/refs/heads/main/videos/infinitelyannoyed.mp4"
+          type="video/mp4"></video>
+        <a class="totop" href="#top">
+          Back To Top <i class="fa-solid fa-angle-up"></i>
         </a>
-        <a href="https://www.facebook.com/share/sgW3mSdyR4uweEpi/?mibextid=kFxxJD" target="_blank">
-            <i class="fa-brands fa-facebook"></i>
-            <p>facebook</p>
-        </a>
+      </div>
     </div>
-</Body>
+
+    <div id="theville" class="subwork">
+      <h1>The Ville S5</h1>
+      <h3>Web Series</h3>
+      <p>
+        I was the Director, Producer, Cinematographer, Gaffer, and 2D Animator
+        for this web series. I worked every week as the head of a team
+        consisting of thirteen people in order to create an eight to thirty
+        minute episode every four weeks.
+      </p>
+      <div class="embedcontainer">
+        <div style="padding: 56.25% 0 0 0; position: relative">
+          <iframe
+            src="https://player.vimeo.com/video/1023160253?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
+            title="theville"></iframe>
+        </div>
+        <a class="totop" href="#top">
+          Back To Top <i class="fa-solid fa-angle-up"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+  <h3 id="explgallery">
+    Here are some of my most recent stills I've captured.
+  </h3>
+  <div id="gallery" class="work">
+    <div class="subwork"><img src="" alt="" /></div>
+    <div class="subwork"><img src="" alt="" /></div>
+  </div>
+
+  <div class="footer">
+    <a
+      href="https://www.instagram.com/escinema_/profilecard/?igsh=MW51Ynh5NG15eHlycg=="
+      target="_blank">
+      <i class="fa-brands fa-instagram"></i>
+      <p>instagram</p>
+    </a>
+    <a
+      href="https://www.facebook.com/share/sgW3mSdyR4uweEpi/?mibextid=kFxxJD"
+      target="_blank">
+      <i class="fa-brands fa-facebook"></i>
+      <p>facebook</p>
+    </a>
+  </div>
+</body>
